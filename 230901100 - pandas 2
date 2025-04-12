@@ -1,0 +1,8 @@
+import pandas as pd
+import numpy as np
+print("DataFrame.applyfunction:\n")
+info=pd.DataFrame([[3,9]]*4,columns=['S','R'])
+print("\n original DataFrame:\n",info)
+print("\n squareroot of DataFrame\n",info.apply(np.sqrt))
+print("\n sum of each columns\n",info.apply(np.sum,axis=0))
+print("\n sum of each rows\n",info.apply(np.sum,axis=1))
